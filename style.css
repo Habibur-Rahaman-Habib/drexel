@@ -1,0 +1,457 @@
+ul {
+	list-style: none;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	padding: 0 0;
+	margin: 0 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.pos {
+	position: static;
+}
+
+
+/* header menu start */
+header {
+	padding: 35px 0;
+}
+
+.header_left {}
+
+.header_left ul {}
+
+.header_left ul li {
+	margin-right: 40px;
+	position: relative;
+	display: inline;
+}
+
+.header_left ul li {}
+
+.header_left ul li ul.home_menu {
+	width: 200px;
+	background: black;
+	position: absolute;
+	top: 110%;
+	left: 0;
+	transition: 0.5s all ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.header_left ul li ul.home_menu li {
+	margin-right: 0px;
+	border-bottom: 1px solid #ffffff94;
+	display: block;
+}
+
+.header_left ul li ul.home_menu li a {
+	color: #888;
+	padding: 13px 23px;
+	display: block;
+}
+
+.header_left ul li ul.home_menu li ul.home_menu {
+	left: 100%;
+	top: 0;
+}
+
+.header_left ul li ul li ul li {}
+
+.header_left ul li ul li ul li a {}
+
+.header_left ul li a {
+	color: #222222;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 18px 0;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.header_left ul li a i {
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 4px;
+}
+
+.header_left ul li:hover>ul.home_menu {
+	opacity: 1;
+	visibility: visible;
+	z-index: 5;
+}
+
+.header_left ul li:hover>a {
+	color: #888888;
+}
+
+.header_left ul li ul.home_menu li:hover>a {
+	color: white;
+}
+
+
+.feature_items {
+	width: 574px;
+	padding: 30px;
+	background: #222222;
+	left: 0;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 5;
+	transition: .3s;
+}
+
+.features_single_item {}
+
+.feature_items ul {
+	flex-direction: column;
+	flex-basis: 46%;
+}
+
+.feature_items ul li {
+	display: block;
+	margin-right: 0px;
+}
+
+.feature_items ul li a {
+	color: #888;
+	display: block;
+	padding: 9px 0px !important;
+}
+
+.feature_items ul li.feature_item_title {
+	border-bottom: 1px solid white;
+}
+
+.feature_items ul li.feature_item_title a {
+	color: white;
+	font-size: 15px;
+	padding-bottom: 4px;
+}
+
+.header_left ul li:hover>.feature_items {
+	visibility: visible;
+	opacity: 1;
+	top: 110%;
+}
+
+.feature_items ul li:hover a {
+	color: white;
+}
+
+.shop_menu {
+	width: 98%;
+	top: 100% !important;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.shop_menu ul {
+	flex-basis: 23%;
+}
+
+.shop_menu ul li {}
+
+.shop_menu ul li img {}
+
+.pos_static {
+	position: static !important;
+}
+
+.pos_rel {
+	position: relative !important;
+}
+
+.header_right {}
+
+.header_right ul {
+	text-align: right;
+	position: relative;
+}
+
+.header_right ul li {
+	margin-left: 40px;
+	display: inline;
+	position: relative;
+}
+
+.header_right ul li a {
+	color: #222222;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 18px 0;
+	font-weight: 500;
+	display: inline-block;
+}
+
+.header_right ul li a i {}
+
+.cart_wrapper {
+	background: #222222;
+	width: 380px;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	padding: 45px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s all ease-in-out;
+	z-index: 5;
+}
+
+.header_right ul li:hover .cart_wrapper {
+	visibility: visible;
+	opacity: 1;
+}
+
+.cart_bar {}
+
+.cart_item {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.cart_item:last-child {
+	border-bottom: 1px solid #aaa;
+}
+
+.cart_item img {}
+
+.cart_item_content {
+	color: #aaaaaa;
+	text-align: left;
+}
+
+.cart_item_content p {}
+
+.cart_item_content span {
+	color: white;
+	font-size: 23px;
+}
+
+.cart_item_content span del {
+	color: #aaaaaa;
+	font-size: 16px;
+}
+
+.cart_item_content a {
+	display: block !important;
+	color: #aaa !important;
+	text-align: right;
+}
+
+.cart_item_content a i {}
+
+.cart_total {}
+
+.cart_total a {
+	display: block !important;
+	text-align: center;
+	color: white !important;
+	background: black;
+}
+
+.cart_total .cart_item {
+	padding-top: 30px;
+}
+
+.cart_total .cart_item span {
+	color: white;
+}
+
+.search_box {
+	width: 450px;
+	background: black;
+	height: 48px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.header_right ul li:hover .search_box {
+	visibility: visible;
+	opacity: 1;
+}
+
+.search_box form {
+	height: 100%;
+}
+
+.search_box form input[type="text"] {
+	border: none;
+	outline: none;
+	background: transparent;
+	height: 100%;
+	width: 85%;
+}
+
+.search_box form input[type="text"]::placeholder {}
+
+.search_box form input[type="button"] {
+	background: transparent;
+	color: white;
+	height: 100%;
+	margin-right: 10px;
+}
+
+/* header menu end */
+
+/* banner start */
+.banner {}
+
+.banner .banner_slider {}
+
+.banner_slider .banner_slider_item {
+	height: 635px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.banner_slider_item .banner_content {
+	padding-left: 107px;
+}
+
+.banner_content h5 {
+	font-size: 28px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 5px;
+}
+
+.banner_content h5 span {
+	font-weight: bold;
+}
+
+.banner_content p {
+	margin-bottom: 35px;
+}
+
+.banner_content a {
+	color: black;
+	border-bottom: 1px solid black;
+}
+
+.banner_slider.owl-theme .owl-nav {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+}
+
+.banner_slider.owl-theme .owl-nav::before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: black;
+	left: 50%;
+}
+
+.banner_slider.owl-theme .owl-nav button {
+	margin: 0 15px;
+}
+
+/* banner end */
+/* furniture product start */
+.furniture_product {
+	padding: 70px 0;
+}
+
+.product_bar {}
+
+.product_bar nav button {
+	border: none;
+	background: none;
+	color: black;
+	padding: 0px;
+	margin-right: 43px;
+}
+
+.product_bar .nav-link.active {
+	border-bottom: 1px solid black;
+	color: #888888;
+}
+
+.product_wrapper {}
+
+.product_item {}
+
+.product_img {
+	position: relative;
+}
+
+.product_img a {}
+
+.product_img a img {
+	max-width: 100%;
+}
+
+.product_content {
+	text-align: center;
+	padding-top: 14px;
+}
+
+.product_price span {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.product_price {
+	height: 25px;
+	margin-top: 17px;
+	overflow: hidden;
+}
+
+.product_price a {}
+
+.product_content p {}
+
+.product_content ul {}
+
+.product_content ul li {
+	display: inline;
+}
+
+.product_content ul li i {}
+
+.product_hover {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 14px;
+}
+
+.product_hover i {
+	display: block;
+	font-size: 20px;
+	padding: 10px 0;
+}
+
+/* furniture product end */
+
+
+/* 
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
